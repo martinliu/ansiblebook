@@ -3,5 +3,7 @@
   tasks:
     - name: print ansible_local
       debug: var=ansible_local
-    - name: print book title
+    - name: print book one title
       debug: msg="The title of the book is {{ ansible_local.example.book.title }}"
+    - name: print book two author
+      debug: msg="The author of the book two  is {{ ansible_local.example2.book2.author }}"
